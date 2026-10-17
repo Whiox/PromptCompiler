@@ -1,0 +1,15 @@
+{
+  "version": "0.1v",
+  "objects": [
+    "fox",
+    "cup",
+    "table",
+    "flower"
+  ],
+  "relations": [
+    "next to",
+    "under",
+    "on",
+    "above"
+  ]
+}
