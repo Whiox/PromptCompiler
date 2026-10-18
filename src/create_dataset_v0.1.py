@@ -3,6 +3,8 @@ from copy import deepcopy
 import json
 from pathlib import Path
 import random
+import tiktoken
+import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,7 +36,7 @@ class DatasetGenerator:
 
         return splits
 
-    def _save(self, splits: dict) -> None:
+    def _save_json(self, splits: dict) -> None:
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
         for split, group in splits.items():
@@ -45,6 +47,33 @@ class DatasetGenerator:
             ]
             content = "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows)
             (self.output_dir / f"{split}.jsonl").write_text(content, encoding="utf-8")
+
+    def _save_bin(self, splits: dict) -> None:
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        tokenizer = tiktoken.get_encoding("gpt2")
+
+        for split, group in splits.items():
+            token_ids = []
+
+            for item in group:
+                scene = json.dumps(
+                    item["scene"],
+                    ensure_ascii=False,
+                    separators=(",", ":"),
+                )
+
+                for request in item["requests"]:
+                    text = (
+                        f"### Request:\n{request}\n\n"
+                        f"### Scene:\n{scene}"
+                    )
+                    token_ids.extend(tokenizer.encode_ordinary(text))
+                    token_ids.append(tokenizer.eot_token)
+
+            np.asarray(token_ids, dtype=np.uint16).tofile(
+                self.output_dir / f"{split}.bin"
+            )
+
 
     def _generate_schenes(self) -> list:
         objects = self.raw["objects"]
@@ -83,10 +112,13 @@ class DatasetGenerator:
 
         return scenes
 
-    def run(self):
+    def run(self, output: str = "bin") -> list:
         scenes = self._generate_schenes()
         splits = self._split(scenes)
-        self._save(splits)
+        if output == "bin":
+            self._save_bin(splits)
+        else:
+            self._save(splits)
 
 
 if __name__ == "__main__":
