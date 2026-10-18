@@ -2,6 +2,8 @@
 
 **Английское описание → JSON сцены → готовый промпт.** GPT-2 124M, дообученная через [nanoGPT](https://github.com/karpathy/nanoGPT), извлекает два объекта, их цвета, материалы и расположение. Интерфейс — Streamlit; сообщения обрабатываются независимо.
 
+**Бизнес-сценарий:** специалист по контенту готовит брифы для предметных рекламных изображений. Он описывает товары, материалы и размещение, проверяет извлечённые поля и копирует единообразный промпт или экспортирует JSON для дальнейшей обработки. Прототип помогает структурировать бриф; генератор изображений подключается отдельно.
+
 ## Запуск
 
 Python 3.11, команды из корня проекта:
@@ -9,6 +11,7 @@ Python 3.11, команды из корня проекта:
 ```powershell
 # Если nanoGPT ещё не скачан:
 git clone https://github.com/karpathy/nanoGPT.git nanoGPT
+git -C nanoGPT checkout (Get-Content nanogpt.commit)
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt -r requirements-ui.txt
@@ -18,7 +21,13 @@ python -m pip install --force-reinstall "torch==2.11.0+cu128" --index-url https:
 
 ## Готовая модель
 
-Скачай `nanogpt_v0.4_2_seed42.zip` из [папки с моделью на Google Drive](https://drive.google.com/drive/folders/1i14pX0w8dLZuurViUw_j08cCfrOtjPEO?usp=sharing). Распакуй архив так, чтобы checkpoint находился по пути:
+Скачай `nanogpt_v0.4_2_seed42.zip` из [папки с моделью на Google Drive](https://drive.google.com/drive/folders/1i14pX0w8dLZuurViUw_j08cCfrOtjPEO?usp=sharing). Если архив лежит в корне проекта, распакуй его командой:
+
+```powershell
+Expand-Archive -LiteralPath .\nanogpt_v0.4_2_seed42.zip -DestinationPath .\experiments
+```
+
+Итоговый путь:
 
 ```text
 experiments/
@@ -44,6 +53,8 @@ print(model.generate_scene("Show the red ceramic cup next to the blue metal box.
 ```
 
 Веса и `.bin` исключены из Git. Инференс автоматически использует CUDA, если она доступна, иначе CPU. При первом запуске может потребоваться интернет для токенизатора.
+
+Проверено 18.10.2026: новая `.venv`, отдельный клон nanoGPT, архив из Drive, запуск Streamlit и один запрос на GPU. [Отчёт проверки](results/clean_environment_check.json).
 
 ## Обучение
 

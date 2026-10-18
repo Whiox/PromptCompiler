@@ -1,6 +1,6 @@
 
 .idea
-.vent
+.venv/
 .env
 
 *.pt
