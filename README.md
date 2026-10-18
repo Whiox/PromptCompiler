@@ -14,10 +14,36 @@ py -3.11 -m venv .venv
 python -m pip install -r requirements.txt -r requirements-ui.txt
 # CUDA-сборка для NVIDIA:
 python -m pip install --force-reinstall "torch==2.11.0+cu128" --index-url https://download.pytorch.org/whl/cu128
+```
+
+## Готовая модель
+
+Скачай `nanogpt_v0.4_2_seed42.zip` из [папки с моделью на Google Drive](https://drive.google.com/drive/folders/1i14pX0w8dLZuurViUw_j08cCfrOtjPEO?usp=sharing). Распакуй архив так, чтобы checkpoint находился по пути:
+
+```text
+experiments/
+└── nanogpt_v0.4_2_seed42/
+    └── ckpt.pt
+```
+
+Не должно быть лишнего вложенного каталога с тем же именем. Для использования готовых весов генерация датасета и обучение не нужны.
+
+Из корня проекта запусти интерфейс и выбери `nanogpt_v0.4_2_seed42`:
+
+```powershell
 python -m streamlit run app.py
 ```
 
-Для интерфейса нужен `experiments/<модель>/ckpt.pt`. Веса и `.bin` исключены из Git.
+Или вызови модель из Python:
+
+```python
+from inference import Model
+
+model = Model(experiment_name="nanogpt_v0.4_2_seed42")
+print(model.generate_scene("Show the red ceramic cup next to the blue metal box."))
+```
+
+Веса и `.bin` исключены из Git. Инференс автоматически использует CUDA, если она доступна, иначе CPU. При первом запуске может потребоваться интернет для токенизатора.
 
 ## Обучение
 
@@ -88,3 +114,13 @@ python benchmark.py --tests tests_holdout.json --models nanogpt_v0.4_2_seed42 --
 Основное ограничение — понимание отношений. Во всех 24 случаях обратного порядка модель выдала связь `o1 → o2`, хотя эталон требует обратного направления; в 20 случаях оба объекта извлечены правильно. Это согласуется с устройством обучающих данных, где связь всегда направлена от первого объекта ко второму. Также обнаружены ошибки на синонимах вроде `beneath` и `below`.
 
 Модель хорошо извлекает объекты, но перенос на новые конструкции ограничен. Следующее улучшение — разнообразить направление связей относительно порядка упоминания и формулировки отношений. Если использовать ошибки этого набора для настройки, для финальной оценки понадобится новый тест.
+
+## ПК разработки
+
+| Компонент | Характеристики |
+| --- | --- |
+| Процессор | AMD Ryzen 5 4600G, 6 ядер / 12 потоков |
+| Видеокарта | NVIDIA GeForce RTX 4060, 8 ГБ VRAM |
+| Оперативная память | 64 ГБ |
+| ОС | Windows 10 Pro, 64 бит |
+| Окружение | Python 3.11.9, PyTorch 2.11.0+cu128, CUDA runtime 12.8 |
