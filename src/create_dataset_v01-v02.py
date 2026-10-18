@@ -26,6 +26,8 @@ class DatasetGenerator:
         self.raw = json.loads(self.source_path.read_text(encoding="utf-8-sig"))
         self.schema = json.loads(self.schema_path.read_text(encoding="utf-8-sig"))
 
+        self.rng = random.Random(self.random_seed)
+
     def _split(self, scenes: list) -> dict:
         held_out = max(1, len(scenes) // 6)
         splits = {
@@ -108,7 +110,7 @@ class DatasetGenerator:
                         "requests": requests,
                     })
 
-        random.Random(self.random_seed).shuffle(scenes)
+        self.rng.shuffle(scenes)
 
         return scenes
 

@@ -22,6 +22,7 @@ class DatasetGenerator:
         self.schema_path = ROOT / "data" / schema_filename
         self.output_dir = ROOT / "datasets" / output_dir
         self.random_seed = random_seed
+        self.rng = random.Random(self.random_seed)
 
         self.raw = json.loads(self.source_path.read_text(encoding="utf-8-sig"))
         self.schema = json.loads(self.schema_path.read_text(encoding="utf-8-sig"))
@@ -91,11 +92,11 @@ class DatasetGenerator:
                 for relation in relations:
                     scene = deepcopy(self.schema)
 
-                    c1 = random.choice(colors)
-                    c2 = random.choice(colors)
+                    c1 = self.rng.choice(colors)
+                    c2 = self.rng.choice(colors)
 
-                    m1 = random.choice(materials)
-                    m2 = random.choice(materials)
+                    m1 = self.rng.choice(materials)
+                    m2 = self.rng.choice(materials)
 
                     scene["objects"] = [
                         {"id": "o1", "name": obj_1, "color": c1, "material": m1},
@@ -169,7 +170,7 @@ class DatasetGenerator:
                         "requests": requests,
                     })
 
-        random.Random(self.random_seed).shuffle(scenes)
+        self.rng.shuffle(scenes)
 
         return scenes
 
