@@ -1,0 +1,4322 @@
+[
+  {
+    "id": "holdout_paraphrases_001",
+    "group": "paraphrases",
+    "request": "The red ceramic cup belongs beneath the brown wooden table.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "red",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_002",
+    "group": "paraphrases",
+    "request": "Set the blue glass bottle beside the white ceramic bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "blue",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "white",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_003",
+    "group": "paraphrases",
+    "request": "A green plastic box should appear directly below the black metal shelf.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "green",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "shelf",
+          "color": "black",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_004",
+    "group": "paraphrases",
+    "request": "Keep the yellow ceramic vase adjacent to the gray metal lamp.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "yellow",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "lamp",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_005",
+    "group": "paraphrases",
+    "request": "The pink fabric toy goes underneath the beige wooden chair.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "toy",
+          "color": "pink",
+          "material": "fabric"
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_006",
+    "group": "paraphrases",
+    "request": "A white ceramic plate is immediately beside the red plastic box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "plate",
+          "color": "white",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "red",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_007",
+    "group": "paraphrases",
+    "request": "Position the black metal clock ahead of the blue glass vase, so the clock is in front.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "clock",
+          "color": "black",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "blue",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_008",
+    "group": "paraphrases",
+    "request": "The purple ceramic bowl should be higher than the orange plastic ball.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bowl",
+          "color": "purple",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "ball",
+          "color": "orange",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_009",
+    "group": "paraphrases",
+    "request": "Put the brown wooden basket on the left-hand side of the white stone table.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "basket",
+          "color": "brown",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": "white",
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_010",
+    "group": "paraphrases",
+    "request": "Keep the gray metal kettle on the right-hand side of the green ceramic cup.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "kettle",
+          "color": "gray",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "cup",
+          "color": "green",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_011",
+    "group": "paraphrases",
+    "request": "The black plastic phone goes to the rear of the pink ceramic vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "phone",
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "pink",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_012",
+    "group": "paraphrases",
+    "request": "Let the orange plastic box rest atop the brown wooden desk.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "orange",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "desk",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_013",
+    "group": "paraphrases",
+    "request": "Place the green glass bottle alongside the yellow ceramic teapot.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "green",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "teapot",
+          "color": "yellow",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_014",
+    "group": "paraphrases",
+    "request": "Have the blue metal spoon underneath the white ceramic plate.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "spoon",
+          "color": "blue",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "plate",
+          "color": "white",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_015",
+    "group": "paraphrases",
+    "request": "The red plastic ball needs to be to the left-hand side of the beige fabric toy.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "red",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "toy",
+          "color": "beige",
+          "material": "fabric"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_016",
+    "group": "paraphrases",
+    "request": "Locate the purple glass vase to the right-hand side of the gray metal clock.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "purple",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "clock",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_017",
+    "group": "paraphrases",
+    "request": "The blue ceramic cup must be in front of the yellow wooden box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "blue",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "yellow",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_018",
+    "group": "paraphrases",
+    "request": "The white plastic camera should sit behind the black metal speaker.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "camera",
+          "color": "white",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "speaker",
+          "color": "black",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_019",
+    "group": "paraphrases",
+    "request": "Let the pink ceramic bowl rest on top of the brown wooden shelf.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bowl",
+          "color": "pink",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "shelf",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_020",
+    "group": "paraphrases",
+    "request": "The green paper book should be below the beige wooden table.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": "green",
+          "material": "paper"
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_021",
+    "group": "paraphrases",
+    "request": "A yellow plastic flower is immediately next to the purple glass bottle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "flower",
+          "color": "yellow",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "bottle",
+          "color": "purple",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_022",
+    "group": "paraphrases",
+    "request": "The gray stone rock goes directly above the blue plastic box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "rock",
+          "color": "gray",
+          "material": "stone"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "blue",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_023",
+    "group": "paraphrases",
+    "request": "The orange ceramic teapot should appear in front of the white metal kettle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "teapot",
+          "color": "orange",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "kettle",
+          "color": "white",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_paraphrases_024",
+    "group": "paraphrases",
+    "request": "Place the black plastic keyboard beside the brown wooden mirror.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "keyboard",
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "mirror",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_001",
+    "group": "reversed_order",
+    "request": "Start with a brown wooden desk; a blue ceramic cup should rest on it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "desk",
+          "color": "brown",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "cup",
+          "color": "blue",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "on",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_002",
+    "group": "reversed_order",
+    "request": "Use the white stone table as a reference. A red plastic ball goes beneath it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "table",
+          "color": "white",
+          "material": "stone"
+        },
+        {
+          "id": "o2",
+          "name": "ball",
+          "color": "red",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "under",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_003",
+    "group": "reversed_order",
+    "request": "There is a black metal lamp. To its left, put a yellow ceramic bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "lamp",
+          "color": "black",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "yellow",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "to the left of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_004",
+    "group": "reversed_order",
+    "request": "Take a green glass bottle and put a purple ceramic vase on its right.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "green",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "purple",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "to the right of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_005",
+    "group": "reversed_order",
+    "request": "The blue wooden box is the reference object; a white ceramic plate goes in front of it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "blue",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "plate",
+          "color": "white",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "in front of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_006",
+    "group": "reversed_order",
+    "request": "First, a gray metal monitor. Behind it, place a pink plastic toy.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "monitor",
+          "color": "gray",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "toy",
+          "color": "pink",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "behind",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_007",
+    "group": "reversed_order",
+    "request": "Choose a beige wooden shelf. Above that shelf, position a black metal clock.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "shelf",
+          "color": "beige",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "clock",
+          "color": "black",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "above",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_008",
+    "group": "reversed_order",
+    "request": "A red ceramic teapot is present; beside it there should be a blue glass bottle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "teapot",
+          "color": "red",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "bottle",
+          "color": "blue",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "next to",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_009",
+    "group": "reversed_order",
+    "request": "Use an orange plastic box, with a green paper book resting on top.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "orange",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "book",
+          "color": "green",
+          "material": "paper"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "on",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_010",
+    "group": "reversed_order",
+    "request": "The brown wooden chair has a yellow fabric toy underneath it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "chair",
+          "color": "brown",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "toy",
+          "color": "yellow",
+          "material": "fabric"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "under",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_011",
+    "group": "reversed_order",
+    "request": "The white ceramic vase has a gray stone rock to its left.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "white",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "rock",
+          "color": "gray",
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "to the left of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_012",
+    "group": "reversed_order",
+    "request": "The black metal speaker has a purple plastic phone to its right.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "speaker",
+          "color": "black",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "phone",
+          "color": "purple",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "to the right of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_013",
+    "group": "reversed_order",
+    "request": "First identify the pink ceramic cup. Put the beige wooden basket behind it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "pink",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "basket",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "behind",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_014",
+    "group": "reversed_order",
+    "request": "Use the green ceramic bowl as the reference and set the white metal spoon in front of it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bowl",
+          "color": "green",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "spoon",
+          "color": "white",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "in front of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_015",
+    "group": "reversed_order",
+    "request": "A blue wooden cabinet is specified. The orange plastic ball belongs above it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cabinet",
+          "color": "blue",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "ball",
+          "color": "orange",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "above",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_016",
+    "group": "reversed_order",
+    "request": "The gray metal kettle should have a red ceramic cup beside it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "kettle",
+          "color": "gray",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "cup",
+          "color": "red",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "next to",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_017",
+    "group": "reversed_order",
+    "request": "Begin with the beige wooden table. On it, place the purple glass bottle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "table",
+          "color": "beige",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "bottle",
+          "color": "purple",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "on",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_018",
+    "group": "reversed_order",
+    "request": "A black wooden desk comes first in the description; the white plastic box belongs below it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "desk",
+          "color": "black",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "white",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "under",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_019",
+    "group": "reversed_order",
+    "request": "The yellow ceramic vase is one object. The blue metal clock is positioned to its left.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "yellow",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "clock",
+          "color": "blue",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "to the left of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_020",
+    "group": "reversed_order",
+    "request": "The pink plastic ball is one object. The green ceramic teapot stands to its right.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "pink",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "teapot",
+          "color": "green",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "to the right of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_021",
+    "group": "reversed_order",
+    "request": "With the brown wooden shelf as reference, show the gray plastic camera behind it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "shelf",
+          "color": "brown",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "camera",
+          "color": "gray",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "behind",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_022",
+    "group": "reversed_order",
+    "request": "With the red metal lamp as reference, place the white paper book in front of it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "lamp",
+          "color": "red",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "book",
+          "color": "white",
+          "material": "paper"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "in front of",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_023",
+    "group": "reversed_order",
+    "request": "The purple plastic box is mentioned first, but the orange ceramic bowl should be above it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "purple",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "orange",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "above",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_reversed_order_024",
+    "group": "reversed_order",
+    "request": "A beige fabric toy is the reference. A black plastic tablet should be alongside it.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "toy",
+          "color": "beige",
+          "material": "fabric"
+        },
+        {
+          "id": "o2",
+          "name": "tablet",
+          "color": "black",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o2",
+          "type": "next to",
+          "object": "o1"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_001",
+    "group": "missing_attributes",
+    "request": "A cup belongs beneath a shelf.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "shelf",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_002",
+    "group": "missing_attributes",
+    "request": "Put a red bottle beside a vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "red",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_003",
+    "group": "missing_attributes",
+    "request": "A bowl made of ceramic goes in front of a box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bowl",
+          "color": null,
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_004",
+    "group": "missing_attributes",
+    "request": "Place a lamp behind a blue chair.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "lamp",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": "blue",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_005",
+    "group": "missing_attributes",
+    "request": "Keep a phone to the left of a metal kettle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "phone",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "kettle",
+          "color": null,
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_006",
+    "group": "missing_attributes",
+    "request": "The yellow cup rests on a table made of wood.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "yellow",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": null,
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_007",
+    "group": "missing_attributes",
+    "request": "A glass bottle should be above a green box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": null,
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "green",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_008",
+    "group": "missing_attributes",
+    "request": "Put the black metal clock next to the basket.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "clock",
+          "color": "black",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "basket",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_009",
+    "group": "missing_attributes",
+    "request": "The book goes under the beige wooden desk.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "desk",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_010",
+    "group": "missing_attributes",
+    "request": "The plate is white; the bowl is purple. Place the plate beside the bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "plate",
+          "color": "white",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "purple",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_011",
+    "group": "missing_attributes",
+    "request": "The box is wooden and the cup is ceramic. Put the box behind the cup.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": null,
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "cup",
+          "color": null,
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_012",
+    "group": "missing_attributes",
+    "request": "The gray lamp belongs to the right of the white vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "lamp",
+          "color": "gray",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "white",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_013",
+    "group": "missing_attributes",
+    "request": "Position the spoon made of metal beneath the ceramic plate.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "spoon",
+          "color": null,
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "plate",
+          "color": null,
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_014",
+    "group": "missing_attributes",
+    "request": "A green plastic ball should appear in front of a camera.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "green",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "camera",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_015",
+    "group": "missing_attributes",
+    "request": "The speaker should be next to a pink fabric toy.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "speaker",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "toy",
+          "color": "pink",
+          "material": "fabric"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_016",
+    "group": "missing_attributes",
+    "request": "Put a brown book above a tablet made of plastic.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": "brown",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "tablet",
+          "color": null,
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_017",
+    "group": "missing_attributes",
+    "request": "The ceramic vase goes to the left of a black box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": null,
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "black",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_018",
+    "group": "missing_attributes",
+    "request": "Place a keyboard under a desk.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "keyboard",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "desk",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_019",
+    "group": "missing_attributes",
+    "request": "A blue kettle goes beside a chair made of wood.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "kettle",
+          "color": "blue",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": null,
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_020",
+    "group": "missing_attributes",
+    "request": "The rock made of stone is behind the orange bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "rock",
+          "color": null,
+          "material": "stone"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "orange",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_021",
+    "group": "missing_attributes",
+    "request": "The bottle is glass and green. Set it on the shelf.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "green",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "shelf",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_022",
+    "group": "missing_attributes",
+    "request": "The toy belongs in front of the yellow metal clock.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "toy",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "clock",
+          "color": "yellow",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_023",
+    "group": "missing_attributes",
+    "request": "The red chair stands to the right of the cabinet.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "chair",
+          "color": "red",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "cabinet",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_missing_attributes_024",
+    "group": "missing_attributes",
+    "request": "Keep the mirror above a table made of stone.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "mirror",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": null,
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_001",
+    "group": "unusual_pairs",
+    "request": "A white ceramic fox should be next to a green plastic keyboard.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "fox",
+          "color": "white",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "keyboard",
+          "color": "green",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_002",
+    "group": "unusual_pairs",
+    "request": "Put a purple plastic mushroom on a gray metal laptop.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "mushroom",
+          "color": "purple",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "laptop",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_003",
+    "group": "unusual_pairs",
+    "request": "A yellow fabric butterfly belongs above a black metal kettle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "butterfly",
+          "color": "yellow",
+          "material": "fabric"
+        },
+        {
+          "id": "o2",
+          "name": "kettle",
+          "color": "black",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_004",
+    "group": "unusual_pairs",
+    "request": "Position a blue ceramic owl behind an orange plastic phone.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "owl",
+          "color": "blue",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "phone",
+          "color": "orange",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_005",
+    "group": "unusual_pairs",
+    "request": "A pink wooden rabbit goes in front of a white metal speaker.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "rabbit",
+          "color": "pink",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "speaker",
+          "color": "white",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_006",
+    "group": "unusual_pairs",
+    "request": "The green paper leaf should be beneath the purple ceramic teapot.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "leaf",
+          "color": "green",
+          "material": "paper"
+        },
+        {
+          "id": "o2",
+          "name": "teapot",
+          "color": "purple",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_007",
+    "group": "unusual_pairs",
+    "request": "A red plastic cactus belongs to the left of a beige fabric toy.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cactus",
+          "color": "red",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "toy",
+          "color": "beige",
+          "material": "fabric"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_008",
+    "group": "unusual_pairs",
+    "request": "Put a black ceramic wolf to the right of a yellow glass bottle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "wolf",
+          "color": "black",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "bottle",
+          "color": "yellow",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_009",
+    "group": "unusual_pairs",
+    "request": "A brown wooden deer should be beside a blue plastic tablet.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "deer",
+          "color": "brown",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "tablet",
+          "color": "blue",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_010",
+    "group": "unusual_pairs",
+    "request": "Place an orange fabric bird on a white stone rock.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bird",
+          "color": "orange",
+          "material": "fabric"
+        },
+        {
+          "id": "o2",
+          "name": "rock",
+          "color": "white",
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_011",
+    "group": "unusual_pairs",
+    "request": "A gray metal spoon goes above a pink plastic camera.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "spoon",
+          "color": "gray",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "camera",
+          "color": "pink",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_012",
+    "group": "unusual_pairs",
+    "request": "A green ceramic flower should be behind a red metal clock.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "flower",
+          "color": "green",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "clock",
+          "color": "red",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_013",
+    "group": "unusual_pairs",
+    "request": "The beige wooden bear belongs in front of the purple glass vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bear",
+          "color": "beige",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "purple",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_014",
+    "group": "unusual_pairs",
+    "request": "Keep a white plastic mouse underneath a brown wooden basket.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "mouse",
+          "color": "white",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "basket",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_015",
+    "group": "unusual_pairs",
+    "request": "Place the yellow ceramic cat to the left of the gray metal knife.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cat",
+          "color": "yellow",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "knife",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_016",
+    "group": "unusual_pairs",
+    "request": "The blue wooden dog should be to the right of the orange plastic bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "dog",
+          "color": "blue",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "orange",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_017",
+    "group": "unusual_pairs",
+    "request": "A pink paper book goes beside a black stone rock.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": "pink",
+          "material": "paper"
+        },
+        {
+          "id": "o2",
+          "name": "rock",
+          "color": "black",
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_018",
+    "group": "unusual_pairs",
+    "request": "The purple metal fork should rest on a green wooden box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "fork",
+          "color": "purple",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "green",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_019",
+    "group": "unusual_pairs",
+    "request": "A red ceramic mushroom belongs above a beige plastic monitor.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "mushroom",
+          "color": "red",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "monitor",
+          "color": "beige",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_020",
+    "group": "unusual_pairs",
+    "request": "Position a white glass ball behind a brown wooden mirror.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "white",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "mirror",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_021",
+    "group": "unusual_pairs",
+    "request": "The black plastic butterfly goes in front of the blue ceramic plate.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "butterfly",
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "plate",
+          "color": "blue",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_022",
+    "group": "unusual_pairs",
+    "request": "A gray fabric toy belongs beneath the yellow wooden tree.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "toy",
+          "color": "gray",
+          "material": "fabric"
+        },
+        {
+          "id": "o2",
+          "name": "tree",
+          "color": "yellow",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_023",
+    "group": "unusual_pairs",
+    "request": "The green metal teapot goes to the left of the orange paper flower.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "teapot",
+          "color": "green",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "flower",
+          "color": "orange",
+          "material": "paper"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_unusual_pairs_024",
+    "group": "unusual_pairs",
+    "request": "Keep the beige stone vase to the right of the pink plastic rabbit.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "beige",
+          "material": "stone"
+        },
+        {
+          "id": "o2",
+          "name": "rabbit",
+          "color": "pink",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_001",
+    "group": "free_form",
+    "request": "I need a cup and a box: ceramic and red for the cup, metal and green for the box. Put the cup underneath the box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "red",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "green",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_002",
+    "group": "free_form",
+    "request": "For the bottle, choose blue glass. For the bowl, white ceramic. The bottle belongs beside the bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "blue",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "white",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_003",
+    "group": "free_form",
+    "request": "Vase: purple ceramic. Lamp: gray metal. Layout: the vase goes in front of the lamp.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "purple",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "lamp",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_004",
+    "group": "free_form",
+    "request": "Make the ball orange and plastic, then set it behind a black wooden chair.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "orange",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": "black",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_005",
+    "group": "free_form",
+    "request": "Use a green paper book as the first object and a beige wooden desk as the second; the book rests on the desk.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": "green",
+          "material": "paper"
+        },
+        {
+          "id": "o2",
+          "name": "desk",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_006",
+    "group": "free_form",
+    "request": "Cup and kettle, please. Both metal; the cup blue, the kettle white. Cup to the left of kettle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "blue",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "kettle",
+          "color": "white",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_007",
+    "group": "free_form",
+    "request": "The box and the toy are both plastic. Color the box yellow and the toy pink, with the box above the toy.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "yellow",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "toy",
+          "color": "pink",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_008",
+    "group": "free_form",
+    "request": "I want a white plate next to a red vase. Use ceramic for both.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "plate",
+          "color": "white",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "red",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_009",
+    "group": "free_form",
+    "request": "Take the green ceramic bowl and the brown wooden basket; the bowl should be below the basket.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bowl",
+          "color": "green",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "basket",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_010",
+    "group": "free_form",
+    "request": "There should be a black plastic phone, followed by a gray metal speaker in the description. Put the phone on the right of the speaker.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "phone",
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "speaker",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_011",
+    "group": "free_form",
+    "request": "Please include a blue glass bottle and a white stone table. The bottle is resting on that table.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "blue",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": "white",
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_012",
+    "group": "free_form",
+    "request": "The clock is yellow and metal; the vase is purple and ceramic. The clock needs to appear behind the vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "clock",
+          "color": "yellow",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "purple",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_013",
+    "group": "free_form",
+    "request": "Two items only: a pink fabric toy and an orange plastic ball. Position the toy in front of the ball.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "toy",
+          "color": "pink",
+          "material": "fabric"
+        },
+        {
+          "id": "o2",
+          "name": "ball",
+          "color": "orange",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_014",
+    "group": "free_form",
+    "request": "I have a red box made of wood and a black lamp made of metal in mind. Put the box to the left of the lamp.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "red",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "lamp",
+          "color": "black",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_015",
+    "group": "free_form",
+    "request": "Think of a gray metal spoon with a white ceramic bowl beside it; the spoon is beside the bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "spoon",
+          "color": "gray",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "white",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_016",
+    "group": "free_form",
+    "request": "Choose a beige plastic keyboard and a blue metal monitor. The keyboard should go below the monitor.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "keyboard",
+          "color": "beige",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "monitor",
+          "color": "blue",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_017",
+    "group": "free_form",
+    "request": "Here is the arrangement: a purple ceramic cup above a green wooden box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "purple",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "green",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_018",
+    "group": "free_form",
+    "request": "The camera is black plastic. The shelf is brown wood. I need the camera in front of the shelf.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "camera",
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "shelf",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_019",
+    "group": "free_form",
+    "request": "A yellow metal kettle and a pink ceramic cup are needed, with the kettle to the right of the cup.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "kettle",
+          "color": "yellow",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "cup",
+          "color": "pink",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_020",
+    "group": "free_form",
+    "request": "Give me a white paper book plus a red plastic tablet. Set the book behind the tablet.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": "white",
+          "material": "paper"
+        },
+        {
+          "id": "o2",
+          "name": "tablet",
+          "color": "red",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_021",
+    "group": "free_form",
+    "request": "Use blue for the vase and green for the bottle. The vase is ceramic, the bottle glass. The vase goes to the left of the bottle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "blue",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "bottle",
+          "color": "green",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_022",
+    "group": "free_form",
+    "request": "A gray stone rock belongs beside a beige wooden basket; those are the only objects.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "rock",
+          "color": "gray",
+          "material": "stone"
+        },
+        {
+          "id": "o2",
+          "name": "basket",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_023",
+    "group": "free_form",
+    "request": "Put a purple plastic ball under an orange wooden chair. These are the two objects for the scene.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "purple",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": "orange",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "holdout_free_form_024",
+    "group": "free_form",
+    "request": "The teapot should be white ceramic, with a blue wooden cabinet behind it. In other words, the teapot is in front of the cabinet.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "teapot",
+          "color": "white",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "cabinet",
+          "color": "blue",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  }
+]

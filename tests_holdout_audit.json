@@ -1,0 +1,56 @@
+{
+  "checks": "Exact tokenized request prefix only; does not exclude equivalent or identical target scenes.",
+  "files": {
+    "v0.3": {
+      "train_bytes": 34604,
+      "exact_request_matches": []
+    },
+    "v0.4": {
+      "train_bytes": 29290152,
+      "exact_request_matches": []
+    },
+    "v0.4_1": {
+      "train_bytes": 104069922,
+      "exact_request_matches": []
+    },
+    "v0.4_2": {
+      "train_bytes": 102141406,
+      "exact_request_matches": []
+    }
+  },
+  "tests_sha256": "f7321662d0db2c1bf55a1149d3890f965ac0d8c3fc99716ecce60f98f87b14d8",
+  "case_count": 120,
+  "groups": {
+    "paraphrases": 24,
+    "reversed_order": 24,
+    "missing_attributes": 24,
+    "unusual_pairs": 24,
+    "free_form": 24
+  },
+  "checkpoint_snapshots": {
+    "nanogpt_v0.1_seed42": {
+      "bytes": 1486353176,
+      "modified_ns": 1792323428537518300
+    },
+    "nanogpt_v0.2_seed42": {
+      "bytes": 1486353176,
+      "modified_ns": 1792311025931103800
+    },
+    "nanogpt_v0.3_seed42": {
+      "bytes": 1486353176,
+      "modified_ns": 1792311841806316500
+    },
+    "nanogpt_v0.4_1_seed42": {
+      "bytes": 1486353240,
+      "modified_ns": 1792333835646301900
+    },
+    "nanogpt_v0.4_2_seed42": {
+      "bytes": 1486353240,
+      "modified_ns": 1792332563684983000
+    },
+    "nanogpt_v0.4_seed42": {
+      "bytes": 1486353176,
+      "modified_ns": 1792312134105332800
+    }
+  }
+}
