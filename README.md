@@ -37,6 +37,8 @@ experiments/
 
 Из корня проекта запусти интерфейс и выбери `nanogpt_v0.4_2_seed42`:
 
+В боковой панели Streamlit есть 20 тестовых примеров: нажми на пример, чтобы отправить запрос модели.
+
 ```powershell
 python -m streamlit run app.py
 ```
