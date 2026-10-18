@@ -1,9 +1,11 @@
 # Run from nanoGPT/: python train.py ../training/finetune_promptcompiler_v03.py
 import os
 
+MODEL_VERSION = "v0.1"
+
 # Upstream joins 'data' with dataset; an absolute path selects our external data.
-dataset = os.path.abspath('../datasets/v0.3/')
-out_dir = '../experiments/nanogpt_v0.3_seed42'
+dataset = os.path.abspath(f'../datasets/{MODEL_VERSION}/')
+out_dir = f'../experiments/nanogpt_{MODEL_VERSION}_seed42'
 init_from = 'gpt2'
 
 device = 'cuda'

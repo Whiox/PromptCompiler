@@ -112,7 +112,7 @@ class DatasetGenerator:
 
         return scenes
 
-    def run(self, output: str = "bin") -> list:
+    def run(self, output: str = "bin") -> None:
         scenes = self._generate_schenes()
         splits = self._split(scenes)
         if output == "bin":
@@ -123,9 +123,9 @@ class DatasetGenerator:
 
 if __name__ == "__main__":
     generator = DatasetGenerator(
-        source_filename="raw_v02.json",
+        source_filename="raw_v01.json",
         schema_filename="schema.json",
-        output_dir="v0.2",
+        output_dir="v0.1",
     )
     generator.run()
     print("Dataset generation completed.")
