@@ -9,7 +9,7 @@ from nanoGPT.model import GPT, GPTConfig
 class Model:
     def __init__(
         self,
-        experiment_name: str = "nanogpt_v0.2_seed42"
+        experiment_name: str = "nanogpt_v0.3_seed42"
     ):
         self.ROOT = Path(__file__).resolve().parent
         self.device = "cuda" if torch.cuda.is_available() else "cpu"

@@ -13,8 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 class DatasetGenerator:
     def __init__(
         self,
-        source_filename: str = "raw_v0.1.json",
-        schema_filename: str = "raw_v0.1.json",
+        source_filename: str = "raw_v01.json",
+        schema_filename: str = "schema.json",
         output_dir: str = "v0.1",
         random_seed: int = 42,
     ) -> None:
@@ -118,12 +118,12 @@ class DatasetGenerator:
         if output == "bin":
             self._save_bin(splits)
         else:
-            self._save(splits)
+            self._save_json(splits)
 
 
 if __name__ == "__main__":
     generator = DatasetGenerator(
-        source_filename="raw_v0.2.json",
+        source_filename="raw_v02.json",
         schema_filename="schema.json",
         output_dir="v0.2",
     )

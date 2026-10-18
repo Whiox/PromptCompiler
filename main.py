@@ -3,8 +3,8 @@ from inference import Model
 
 
 def main():
-    model = Model()
-    print(model.generate_scene("A blue eyes dog on a wooden table"))
+    model = Model(experiment_name="nanogpt_v0.3_seed42")
+    print(model.generate_scene("A dog on a wooden table"))
 
 
 if __name__ == "__main__":

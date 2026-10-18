@@ -1,0 +1,24 @@
+{
+  "version": "0.3v",
+  "objects": [
+    "cup",
+    "table",
+    "box"
+  ],
+  "relations": [
+    "next to",
+    "under",
+    "on",
+    "above"
+  ],
+  "colors": [
+    "red",
+    "blue",
+    "green"
+  ],
+  "materials": [
+    "wood",
+    "metal",
+    "ceramic"
+  ]
+}
