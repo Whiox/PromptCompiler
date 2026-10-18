@@ -2,8 +2,8 @@
 import os
 
 # Upstream joins 'data' with dataset; an absolute path selects our external data.
-dataset = os.path.abspath('../datasets/v0.3/')
-out_dir = '../experiments/nanogpt_v0.3_seed42'
+dataset = os.path.abspath('../datasets/v0.4/')
+out_dir = '../experiments/nanogpt_v0.4_seed42'
 init_from = 'gpt2'
 
 device = 'cuda'
