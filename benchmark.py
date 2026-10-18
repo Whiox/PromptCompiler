@@ -6,11 +6,12 @@ import tqdm
 
 
 MODELS_TO_COMPARE = [
-    "nanogpt_v0.1_seed42",
-    "nanogpt_v0.2_seed42",
+    # "nanogpt_v0.1_seed42",
+    # "nanogpt_v0.2_seed42",
     "nanogpt_v0.3_seed42",
     "nanogpt_v0.4_seed42",
     "nanogpt_v0.4_1_seed42",
+    "nanogpt_v0.4_2_seed42",
 ]
 
 TESTS = json.loads(Path(__file__).with_name("tests.json").read_text(encoding="utf-8"))

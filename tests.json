@@ -698,5 +698,355 @@
       },
       "forbidden": []
     }
+  },
+  {
+    "id": "missing_attributes_001",
+    "request": "Show the red cup next to the blue box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "red",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "blue",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_002",
+    "request": "Show the ceramic cup next to the metal box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_003",
+    "request": "Show the red cup next to the box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "red",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_004",
+    "request": "Show the cup next to the blue box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "blue",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_005",
+    "request": "Show the ceramic cup next to the box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_006",
+    "request": "Show the cup next to the metal box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_007",
+    "request": "Show the red ceramic cup next to the box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "red",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_008",
+    "request": "Show the cup next to the blue metal box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "blue",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_009",
+    "request": "Show the red cup next to the metal box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "red",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": null,
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_010",
+    "request": "Show the ceramic cup next to the blue box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": null,
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "blue",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
   }
 ]
