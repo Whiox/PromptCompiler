@@ -17,6 +17,21 @@ EXAMPLES = [
     ("Слева", "Place the red cup to the left of the blue box."),
     ("Без материала", "Show the red cup next to the blue box."),
     ("Другая формулировка", "The cup is ceramic and green. It is under the wooden table."),
+    ("Справа", "Place the red cup to the right of the blue box."),
+    ("Под столом", "The red ceramic cup is under the brown wooden table."),
+    ("Над коробкой", "Show a purple ceramic bowl above a yellow plastic box."),
+    ("Перед лампой", "The white ceramic vase is in front of the black metal lamp."),
+    ("За лампой", "The white ceramic vase is behind the black metal lamp."),
+    ("Без цвета", "Show the ceramic cup next to the metal box."),
+    ("Без свойств", "The cup is on the table."),
+    ("Цвет только у чашки", "Show the red cup next to the box."),
+    ("Материал только у коробки", "Show the cup next to the metal box."),
+    ("Цвет и материал раздельно", "Show the red cup next to the metal box."),
+    ("Посуда", "The white ceramic plate is next to the black metal spoon."),
+    ("Мяч и стул", "The orange plastic ball is under the gray metal chair."),
+    ("Техника", "The black plastic keyboard is in front of the gray metal monitor."),
+    ("Общие свойства", "The vase is purple. The box is black. Both objects are made of plastic. The vase is above the box."),
+    ("Первый и второй", "Show two objects: a red cup and a blue box. The first is above the second."),
 ]
 
 
