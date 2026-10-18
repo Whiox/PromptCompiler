@@ -1048,5 +1048,705 @@
       },
       "forbidden": []
     }
+  },
+  {
+    "id": "basic_004",
+    "request": "The book is on the desk.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "book",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "desk",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "basic_005",
+    "request": "Show the dog under the chair.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "dog",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "basic_006",
+    "request": "The lamp is above the shelf.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "lamp",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "shelf",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "basic_007",
+    "request": "Place the camera in front of the monitor.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "camera",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "monitor",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "attributes_008",
+    "request": "The white ceramic teapot is next to the green glass bottle.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "teapot",
+          "color": "white",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "bottle",
+          "color": "green",
+          "material": "glass"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "attributes_009",
+    "request": "The black plastic keyboard is in front of the gray metal monitor.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "keyboard",
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "monitor",
+          "color": "gray",
+          "material": "metal"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "attributes_010",
+    "request": "Show the brown wooden box under the beige wooden desk.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "brown",
+          "material": "wood"
+        },
+        {
+          "id": "o2",
+          "name": "desk",
+          "color": "beige",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "attributes_011",
+    "request": "The pink ceramic vase is on the white stone table.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "pink",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": "white",
+          "material": "stone"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "relation_008",
+    "request": "The green plastic ball is to the left of the purple ceramic bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "green",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "purple",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "relation_009",
+    "request": "The green plastic ball is to the right of the purple ceramic bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "ball",
+          "color": "green",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": "purple",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the right of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "relation_010",
+    "request": "The yellow metal clock is behind the blue ceramic vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "clock",
+          "color": "yellow",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "blue",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "behind",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "relation_011",
+    "request": "The yellow metal clock is in front of the blue ceramic vase.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "clock",
+          "color": "yellow",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "vase",
+          "color": "blue",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "in front of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_011",
+    "request": "The blue bottle is on the table.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "blue",
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_012",
+    "request": "Show the glass bottle next to the ceramic bowl.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": null,
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "bowl",
+          "color": null,
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_013",
+    "request": "The lamp is above the red box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "lamp",
+          "color": null,
+          "material": null
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "red",
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "missing_attributes_014",
+    "request": "The orange plastic toy is under the chair.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "toy",
+          "color": "orange",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "chair",
+          "color": null,
+          "material": null
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "under",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "paraphrase_004",
+    "request": "The bottle is green and made of glass. It is next to a white ceramic plate.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "bottle",
+          "color": "green",
+          "material": "glass"
+        },
+        {
+          "id": "o2",
+          "name": "plate",
+          "color": "white",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "next to",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "paraphrase_005",
+    "request": "Show two objects: a red metal box and a blue ceramic cup. The first is to the left of the second.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "box",
+          "color": "red",
+          "material": "metal"
+        },
+        {
+          "id": "o2",
+          "name": "cup",
+          "color": "blue",
+          "material": "ceramic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "to the left of",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "paraphrase_006",
+    "request": "Place the cup made of ceramic on the table made of wood. Their colors are yellow and brown, respectively.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "cup",
+          "color": "yellow",
+          "material": "ceramic"
+        },
+        {
+          "id": "o2",
+          "name": "table",
+          "color": "brown",
+          "material": "wood"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "on",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
+  },
+  {
+    "id": "paraphrase_007",
+    "request": "The vase is purple. The box is black. Both objects are made of plastic. The vase is above the box.",
+    "expected": {
+      "objects": [
+        {
+          "id": "o1",
+          "name": "vase",
+          "color": "purple",
+          "material": "plastic"
+        },
+        {
+          "id": "o2",
+          "name": "box",
+          "color": "black",
+          "material": "plastic"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "o1",
+          "type": "above",
+          "object": "o2"
+        }
+      ],
+      "background": null,
+      "style": null,
+      "lighting": null,
+      "composition": {
+        "subject_position": null,
+        "negative_space": null
+      },
+      "forbidden": []
+    }
   }
 ]
