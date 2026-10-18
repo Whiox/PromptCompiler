@@ -1,7 +1,7 @@
 # Run from nanoGPT/: python train.py ../training/finetune_promptcompiler_v03.py
 import os
 
-MODEL_VERSION = "v0.1"
+MODEL_VERSION = "v0.4_1"
 
 # Upstream joins 'data' with dataset; an absolute path selects our external data.
 dataset = os.path.abspath(f'../datasets/{MODEL_VERSION}/')
