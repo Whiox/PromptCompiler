@@ -6,12 +6,10 @@
 
 ## Запуск
 
-Python 3.11, команды из корня проекта:
+Python 3.11, команды из корня проекта. nanoGPT подключён как Git submodule и закреплён на коммите [`3adf61e`](https://github.com/karpathy/nanoGPT/commit/3adf61e154c3fe3fca428ad6bc3818b27a3b8291).
 
 ```powershell
-# Если nanoGPT ещё не скачан:
-git clone https://github.com/karpathy/nanoGPT.git nanoGPT
-git -C nanoGPT checkout (Get-Content nanogpt.commit)
+git submodule update --init --recursive
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt -r requirements-ui.txt

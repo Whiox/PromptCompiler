@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-18",
+  "isolated_venv": true,
+  "python": "3.11.9",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "streamlit": "1.66.0",
+  "nanogpt_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+  "archive_source": "https://drive.google.com/file/d/1SqvnoKBIogpmzXbhmLm2jnKecO_7o_pP/view",
+  "downloaded_without_authentication": true,
+  "archive_bytes": 1486353588,
+  "archive_members": [
+    {
+      "name": "nanogpt_v0.4_2_seed42/",
+      "bytes": 0
+    },
+    {
+      "name": "nanogpt_v0.4_2_seed42/ckpt.pt",
+      "bytes": 1486353240
+    }
+  ],
+  "checkpoint_step": 5000,
+  "fresh_tokenizer_cache": true,
+  "ui_chat_inference": "passed",
+  "scene_matches_reference": true,
+  "example_request": "Show the red ceramic cup next to the blue metal box.",
+  "raw_response": "{\"objects\":[{\"id\":\"o1\",\"name\":\"cup\",\"color\":\"red\",\"material\":\"ceramic\"},{\"id\":\"o2\",\"name\":\"box\",\"color\":\"blue\",\"material\":\"metal\"}],\"relations\":[{\"subject\":\"o1\",\"type\":\"next to\",\"object\":\"o2\"}],\"background\":null,\"style\":null,\"lighting\":null,\"composition\":{\"subject_position\":null,\"negative_space\":null},\"forbidden\":[]}",
+  "compiled_prompt": "Objects: red ceramic cup; blue metal box. The red ceramic cup is next to the blue metal box.",
+  "limitations": "Fresh Python environment and source checkout on the same PC, not a different Windows installation. One inference/UI case, not a full benchmark or training run.",
+  "streamlit_server_health": "passed",
+  "pip_check": "No broken requirements found.",
+  "archive_sha256": "0ad98e9b9f1fba123e1351c2a25b608fe82f987224f799799aa6401372748bab",
+  "archive_crc": "passed on extraction"
+}
