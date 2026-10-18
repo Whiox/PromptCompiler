@@ -25,6 +25,13 @@ class Benchmark:
         self.json_validity: int = 0
         self.valid_objects: int = 0
         self.valid_scenes: int = 0
+        self.true_positive: int = 0
+        self.false_positive: int = 0
+        self.false_negative: int = 0
+
+        self.precision: float = 0.0
+        self.recall: float = 0.0
+        self.f1_score: float = 0.0
 
     def load_model(self):
         self.model = Model(self.model_name)
@@ -33,6 +40,13 @@ class Benchmark:
         self.json_validity: int = 0
         self.valid_objects: int = 0
         self.valid_scenes: int = 0
+        self.true_positive: int = 0
+        self.false_positive: int = 0
+        self.false_negative: int = 0
+
+        self.precision: float = 0.0
+        self.recall: float = 0.0
+        self.f1_score: float = 0.0
 
         self.load_model()
 
@@ -60,6 +74,27 @@ class Benchmark:
                     remaining.remove(obj_test)
                     break
         return count
+
+    def _update_object_metrics(self, pred_json: dict | bool, test_json: dict) -> None:
+        objects = pred_json.get("objects", []) if isinstance(pred_json, dict) else []
+        predicted_count = len(objects) if isinstance(objects, list) else 0
+        matched_count = self._count_valid_objects(pred_json, test_json)
+
+        # A match requires the name and all properties, ignoring the object's ID.
+        self.valid_objects += matched_count
+        self.true_positive += matched_count
+        self.false_positive += predicted_count - matched_count
+        self.false_negative += len(test_json["objects"]) - matched_count
+
+    def _calculate_f1(self) -> None:
+        predicted_count = self.true_positive + self.false_positive
+        expected_count = self.true_positive + self.false_negative
+
+        self.precision = self.true_positive / predicted_count if predicted_count else 0.0
+        self.recall = self.true_positive / expected_count if expected_count else 0.0
+
+        total = self.precision + self.recall
+        self.f1_score = 2 * self.precision * self.recall / total if total else 0.0
 
     def _valid_json_structure(self, pred_json: dict, test_json: dict) -> bool:
         if not isinstance(pred_json, dict) or pred_json.keys() != test_json.keys():
@@ -122,13 +157,17 @@ class Benchmark:
             response = self.model.generate_scene(test["request"])
 
             response_json = self._valid_json(response)
+            # Invalid JSON contributes missed reference objects (FN) as well.
+            self._update_object_metrics(response_json, test["expected"])
 
             if not response_json:
                 continue
 
-            self.valid_objects += self._count_valid_objects(response_json, test["expected"])
             if self._valid_json_structure(response_json, test["expected"]):
                 self.valid_scenes += 1
+
+        # Micro averaging: sum TP/FP/FN across all tests before computing F1.
+        self._calculate_f1()
 
 
 def main() -> None:
@@ -139,6 +178,9 @@ def main() -> None:
         print(f"{model_name}: {benchmark.json_validity} валидных JSON из {len(TESTS)}")
         print(f"{model_name}: {benchmark.valid_objects} валидных объектов из {TOTAL_OBJECTS}")
         print(f"{model_name}: {benchmark.valid_scenes} правильных сцен из {len(TESTS)}")
+        print(f"{model_name}: Object Precision = {benchmark.precision:.4f}")
+        print(f"{model_name}: Object Recall = {benchmark.recall:.4f}")
+        print(f"{model_name}: Object F1 = {benchmark.f1_score:.4f}")
 
 
 if __name__ == "__main__":
